@@ -206,3 +206,55 @@ body {
     width: 1150px;
     border-radius: 30px;
 }
+
+/* Responsive */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* test */
+.grid__column-3{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+}
+
+
+
+/*App Container */
+.app__container{
+    background-color: #F4F7F8;
+
+}
+
+.category-detail{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: bold;
+    font-size: 48px;
+    line-height: 58px;
+    line-height: 120%;
+    align: left;
+    vertical-align: top;
+    letter-spacing: 0.5%;
+}
+
+.category-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
