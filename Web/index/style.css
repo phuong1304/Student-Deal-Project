@@ -1,20 +1,23 @@
 body {
     width: 100%;
-    margin-top: -10px;
+    margin: 0;
+    /* margin-top: -10px; */
     font-family: 'Roboto';
     background-color: rgba(0, 0, 0, 0.014);
  
 }
 
 /* Header Start  */
-
+.header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
 #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 80px;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    margin: 0 100px 0 100px;
+   
 }
 
 #header1 {
@@ -23,8 +26,6 @@ body {
     align-items: center;
     margin: 10px 100px 10px 100px;
     justify-content: space-between;
-    /* border: 2px solid; */
-
 }
 
 #button {
@@ -63,21 +64,23 @@ body {
     float: left;
     display: flex;
     padding-left: 0px;
-    color: #11142D;   
+    color: #11142D;  
+    
 }
 
 /* Thanh Search */
 .navbar-search{
     height: 50px;
-    margin: 0 auto;
-    margin-left: 10px;
+    margin: 0 30px 0 10px ;
     display: flex;
     padding: 0px;
+    
 }
 
 .navbar-search-container{
-    margin-right: 0px;
-    padding: 0px;
+    display: flex;
+    padding-bottom: 8.5px;
+    
 }
 
 #search-btn {
@@ -89,7 +92,8 @@ body {
     border: none;
     cursor: pointer;
     height: 32px;
-    background-color: white;
+    background-color: rgb(248, 180, 117);
+    
 }
 
 #search-btn img{
@@ -109,10 +113,10 @@ body {
     display: flex;
     list-style: none;
     overflow: hidden;
-    float: right;
+    /* float: right; */
     margin-top: 20px;
-    margin-right: 25px;
-    padding-right: 50px;
+    /* margin-right: 25px; */
+    /* padding-right: 50px; */
 }
 
 #navbar2 img{
@@ -142,23 +146,23 @@ body {
     transition: 0.3s ease;
 }
 
-.logo {
-    position: absolute;
-    width: 144px;
-    height: 124px;
-    left: 72px;
-    top: -15px;
-
-}
-
-.logo-txt {
+.logo{
     font-size: 25px;
     display: flex;
-    margin-left: 130px;
     font-weight: bolder;
     color: #F86338;
-    padding-top: 10px;
+    text-decoration: none;
 }
+
+.logo-img {
+    width: 110px;
+    height: 50px;
+    padding-top: 13px;
+    margin-right: 10px;
+
+}
+
+
 
 #navbar1 li a:hover,
 #navbar li a:hover,
@@ -311,7 +315,7 @@ body {
     justify-content: center;
     font-family: 'Roboto';
     font-style: bold;
-    font-size: 48px;
+    font-size: 30px;
     /* line-height: 58px;
     line-height: 120%; */
     /* align-items: left; */
@@ -469,13 +473,82 @@ body {
 .feedback-crear{
     font-size: 17px;
 }
-.section-p1{
-    background-color: #ccc;
-}
-.col img{
-    width: 144px;
-    height: 124px;
-    
+
+/* Footer  */
+footer{
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.548);
 }
 
+.footer-logo{
+    margin-top: 20px;
+    width: 130px;
+    height: 60px;
 
+}
+.app img{
+    width: 120px ;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px 100px 0 100px;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.app{
+    display: flex;
+}
+.app img{
+    margin-right: 20px;
+}
+.app-kind{
+    margin-top: 5px;;
+    font-size: 15px;
+}
+
+.app-kind h5{
+    border: 1px solid #756c67;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+footer h4{
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: #F3692E;
+}
+footer p{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+    color: rgba(17, 20, 45, 1);
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgba(17, 20, 45, 1);
+    margin-bottom: 13px;
+}
+ .follow{
+    color: rgb(37, 19, 2);
+    padding-right: 4px;
+    cursor: pointer;
+ }
+
+ footer .follow a{
+    font-size: 20px;
+    margin-right:10px ;
+    color: rgba(17, 20, 45, 1);
+ }
+footer .follow a:hover,
+footer a:hover{
+    color: rgb(245, 125, 13) ;
+ }
